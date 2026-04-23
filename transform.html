@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 80%;
+            margin: auto;
+            padding: 4px;
+           
+            background-color: rgb(0, 0, 0);
+            border: 2px solid black;
+        }
+        .B{
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .boxA{
+            background-color: bisque;
+            transition: 2s ease;
+        }
+        .boxA:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(90deg);
+        }
+        .boxB{
+            background-color: blueviolet;
+            transition: 2s steps(5);
+        }
+        .boxB:hover{
+            width: 200px;
+            height: 200px;
+            transform: scale(2);
+        }
+        .boxC{
+            background-color: cornflowerblue;
+            transition: 2s ease-out;
+           
+        }
+        .boxC:hover{
+            width: 200px;
+            height: 200px;
+            transform: translate(100px);
+        }
+        .boxD{
+            background-color: darkgray;
+            transition: 2s ease-in-out;
+            
+        }
+        .boxD:hover{
+            width: 200px;
+            height: 200px;
+            transform: skew(30deg);
+        }
+        .boxE{
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="B boxA">A</div>
+        <div class="B boxB">B</div>
+        <div class="B boxC">C</div>
+        <div class="B boxD">D</div>
+        <div class="B boxE">E</div>
+    </div>
+</body>
+</html>
